@@ -118,6 +118,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   cursor: pointer;
+  background-color: white;
+  color: var(--orange);
 }
 
 /* -------------------------------------------------------THANK YOU PAGE --------------------------------------------*/
