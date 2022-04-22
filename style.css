@@ -75,8 +75,6 @@ p,
 .rate {
   display: flex;
   width: 341px;
-  height: 51px;
-
   margin: 24px 39px 0 32px;
 }
 
@@ -87,7 +85,7 @@ p,
   text-align: center;
   align-items: center;
   padding: 15px;
-  margin: 10px;
+  margin: 8px;
   font-weight: 700;
   background-color: var(--circle-background-color);
   cursor: pointer;
