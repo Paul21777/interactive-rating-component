@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  --title-color: #ffffff;
+  --text-color: #969fad;
+  --number-rate-color: #7c8798;
+  --circle-background-color: #262e38;
+
+  --background-color-lol: radial-gradient(
+    closest-side at 60% 55%,
+    #232a34,
+    #181e27
+  );
+  --orange: #fc7614;
+  background-color: #131518;
+  font-family: "Overpass", sans-serif;
+}
+
+/* ---------------------------------------------------- FIRST PAGE --------------------------------------------------------*/
+
+.star {
+  border-radius: 50%;
+  padding: 16px;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  background-color: var(--circle-background-color);
+}
+
+.main,
+.confirm {
+  width: 412px;
+  height: 416px;
+  position: absolute;
+  border: 0px solid black;
+  border-radius: 30px;
+  background-image: var(--background-color-lol);
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--title-color);
+}
+
+.main-title {
+  margin: 110px 0 0 32px;
+  width: 201px;
+  height: 35px;
+}
+
+p,
+.radio {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.presentation-rate {
+  margin: 15px 40px 0 32px;
+}
+
+/* ------------------------------------------------------RATES ELEMENTS -----------------------------------*/
+.rate {
+  display: flex;
+  width: 341px;
+  height: 51px;
+
+  margin: 24px 39px 0 32px;
+}
+
+.rate .radio {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  margin: 10px;
+  font-weight: 700;
+  background-color: var(--circle-background-color);
+  cursor: pointer;
+}
+
+.rate .radio:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+.rate input[type="radio"] {
+  display: none;
+}
+
+.rate input[type="radio"]:checked + .radio {
+  background-color: var(--number-rate-color);
+  color: white;
+}
+
+input[type="submit"] {
+  margin: 32px 39px 32px 32px;
+  width: 341px;
+  height: 45px;
+  border-radius: 22px;
+  border: none;
+  font-weight: 700;
+  color: var(--title-color);
+  background-color: var(--orange);
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------THANK YOU PAGE --------------------------------------------*/
+
+.hidden {
+  display: none;
+}
+
+.thank-you {
+  margin: 45px 129px 0 121px;
+}
+
+.currentRate {
+  border-radius: 22px;
+  background-color: var(--circle-background-color);
+  width: 193px;
+  height: 32px;
+  text-align: center;
+  padding-top: 7px;
+  color: var(--orange);
+  font-size: 15px;
+  margin: 32px 109px 0 110px;
+}
+
+.second-title {
+  width: 145px;
+  height: 43px;
+  margin: 32px 134px 0 135px;
+}
+
+.confirm-paragraph {
+  text-align: center;
+  margin: 7px 40px 0 32px;
+}
