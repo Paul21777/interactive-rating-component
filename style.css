@@ -107,7 +107,7 @@ p,
 }
 
 input[type="submit"] {
-  margin: 32px 39px 32px 32px;
+  margin: 19px 39px 32px 32px;
   width: 341px;
   height: 45px;
   border-radius: 22px;
@@ -115,6 +115,8 @@ input[type="submit"] {
   font-weight: 700;
   color: var(--title-color);
   background-color: var(--orange);
+  letter-spacing: 2px;
+  font-size: 15px;
 }
 
 input[type="submit"]:hover {
